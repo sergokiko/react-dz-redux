@@ -1,0 +1,22 @@
+.Backdrop {
+    z-index: 50;
+    background: rgba(0, 0, 0,.7);
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Backdrop > div {
+    width: 400px;
+    height: 500px;
+    background: white;
+    padding: 30px;
+    position: relative;
+}
+

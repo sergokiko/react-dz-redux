@@ -1,0 +1,21 @@
+.cartItems{
+    margin-top: 40px;
+
+}
+
+
+.Cart{
+    z-index: 150;
+    position: relative;
+}
+.closer {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.Cart i {
+    font-size: 25px;
+}
+

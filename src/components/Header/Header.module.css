@@ -1,0 +1,23 @@
+
+.headerSection{
+    height: 70px;
+    background: #173f5f;
+    padding-top: 25px }
+
+.Header{
+    color: white;
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Header h1 {
+    margin: 0;
+    padding: 0;
+}
+.Header button {
+  padding: 10px;
+    color: #173f5f;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
