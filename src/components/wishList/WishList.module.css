@@ -1,0 +1,17 @@
+.Wishlist {
+    position: relative;
+}
+.WishlistButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    padding: 10px 20px;
+    color: white;
+    background: #173f5f;
+    font-size: 20px;
+
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}

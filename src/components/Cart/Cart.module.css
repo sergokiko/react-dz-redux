@@ -7,6 +7,23 @@
 .Cart{
     z-index: 150;
     position: relative;
+    overflow: auto;
+
+}
+.buyBtn{
+margin-top: 30px;
+
+
+}
+.buyBtn button {
+    padding: 10px 20px;
+    color: white;
+    background: #173f5f;
+    font-size: 20px;
+
+    border: none;
+    border-radius: 2px;
+    outline: none;
 }
 .closer {
     position: absolute;

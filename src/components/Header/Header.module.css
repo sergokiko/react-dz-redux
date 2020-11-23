@@ -9,7 +9,17 @@
 display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
+.logoBtn a{
+   text-decoration: none;
+    color: white;
+}
+.wishlistBtn a {
+    text-decoration: none;
+    color: #173f5f;
+}
+
 .Header h1 {
     margin: 0;
     padding: 0;

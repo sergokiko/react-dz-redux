@@ -1,15 +1,23 @@
 .CartItem{
 
     border: 1px solid black;
-    height: 20px;
+
     padding: 20px;
     font-weight: bold;
     margin-bottom: 5px;
-display: flex;
+
+}
+.CartItemContent{
+    display: flex;
     justify-content: space-between;
 
 }
+
 .CartItem span {
 margin: 0 10px;
+}
+.CartItemTitle{
+    text-align: center;
+    margin-bottom: 10px;
 }
 

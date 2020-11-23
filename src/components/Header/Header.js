@@ -1,8 +1,9 @@
 import React from 'react'
 import classes from './Header.module.css'
-import cart from '../../cart.jpg';
+
 import {useSelector, useDispatch} from "react-redux";
 import {cardToggleHandler} from "../../redux/actions";
+import {NavLink} from "react-router-dom";
 
 export const Header = () => {
     const cart = useSelector(state => state.cart)
@@ -18,9 +19,9 @@ export const Header = () => {
         <div className={classes.headerSection}>
             <div className='container'>
                 <div className={classes.Header}>
-                    <div><h1>My Shop</h1></div>
+                    <div className={classes.logoBtn}><NavLink to='/'><h1>My Shop</h1></NavLink></div>
                     <div>
-                        <button>Wish list: {wishList.length} </button>
+                        <button className={classes.wishlistBtn}><NavLink to='/wishlist'> Wish list: {wishList.length} </NavLink></button>
                         <button onClick={onCartOpen} >Cart: {itemsInCart}</button>
                     </div>
                 </div>

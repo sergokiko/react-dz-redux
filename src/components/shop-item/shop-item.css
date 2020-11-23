@@ -1,12 +1,14 @@
 .card {
     width: 300px;
     height: 400px;
-    border: 1px solid black;
+
+    border-radius: 5px;
     margin: 20px;
     padding: 20px;
     position: relative;
     text-align: center;
-
+    -webkit-box-shadow: 7px 7px 20px -2px #000000;
+    box-shadow: 7px 7px 20px -2px #000000;
 
 }
 
@@ -26,4 +28,5 @@
     color: white;
     border: none;
     font-size: 18px;
+    border-radius: 2px;
 }

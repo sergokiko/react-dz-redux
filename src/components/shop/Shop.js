@@ -2,11 +2,19 @@ import React, {Component} from 'react';
 import classes from './Shop.module.css'
 
 import {connect} from 'react-redux'
-import {addToCart, addToWishlist} from "../../redux/actions";
+import {addToCart, addToWishlist, addProductsFromBackend} from "../../redux/actions";
 import {ShopItem} from "../shop-item/shop-item";
 
 
 class Shop extends Component {
+
+ async  componentDidMount() {
+     const res = await fetch('https://fakestoreapi.com/products');
+     const data = await res.json();
+     this.props.addProductsFromBackend(data)
+     console.log(data);
+
+ }
 
     render() {
 
@@ -37,6 +45,9 @@ function mapStateToProps(state) {
 
 export default connect(mapStateToProps, {
     addToCart,
-    addToWishlist
+    addToWishlist,
+    addProductsFromBackend,
+
+
 
 })(Shop);
