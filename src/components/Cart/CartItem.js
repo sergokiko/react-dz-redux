@@ -25,7 +25,7 @@ export const CartItem = (props) => {
             <div>
                 <button onClick={onDecQuantity}>&#8722;</button>
                 <span>{quantity}</span>
-                <button onClick={onAddQuantity} >&#43;</button>
+                <button onClick={onAddQuantity} >&#43;</button> &nbsp;
                 =&nbsp; &nbsp;{(price * quantity).toFixed(2)}</div>
             <div onClick={deleteItem} ><i className="fa fa-trash" aria-hidden="true"/></div>
             </div>
